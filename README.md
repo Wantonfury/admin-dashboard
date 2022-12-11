@@ -1,5 +1,5 @@
 # admin-dashboard
-This project creates a website from a layout image using a combination of CSS Grid and Flexbox.
+This project creates a website from a design image using CSS Grid.
 
 Live website: https://wantonfury.github.io/admin-dashboard/
 
