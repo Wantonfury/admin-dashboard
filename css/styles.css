@@ -37,6 +37,15 @@ body {
     padding-left: 6px;
     
     font-weight: 700;
+    transition: 100ms ease-in-out;
+}
+
+.dashboard-item:not(:first-child) > span {
+    cursor: pointer;
+}
+
+.dashboard-item:not(:first-child) > span:hover {
+    text-decoration: underline;
 }
 
 #dashboard-logo {
@@ -44,6 +53,135 @@ body {
     font-weight: 700;
     padding-left: 0px;
     gap: 10px;
+}
+
+#header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: max(60%, 300px) max(40%, 200px);
+}
+
+#header-search {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    padding-left: 24px;
+}
+
+#header-search > img {
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+
+#header-search > img:hover {
+    transform: scale(1.05);
+}
+
+#header-search input[type=text] {
+    width: 0;
+    min-width: 95%;
+    height: 24px;
+    
+    padding-left: 8px;
+    
+    border-radius: 24px;
+    border: none;
+    background-color: #e2e8f0;
+}
+
+#header-search input[type=text]:focus {
+    outline: none;
+}
+
+#header-profile {
+    display: grid;
+    grid-template-columns: 46% 24% 30%;
+    align-items: center;
+    justify-items: right;
+}
+
+#header-profile > span {
+    justify-self: left;
+    font-weight: 700;
+}
+
+#header-profile > .profile-picture {
+    justify-self: center;
+}
+
+#header-profile > .notifications {
+    padding-right: 14px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+
+#header-profile > .notifications:hover {
+    transform: scale(1.05);
+}
+
+.profile-picture {
+    border-radius: 48px;
+    height: 48px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+}
+
+#header-welcome {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 12% 88%;
+    
+    padding-left: 24px;
+    align-items: center;
+}
+
+.welcome-message {
+    justify-self: left;
+    margin-top: auto;
+    
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.welcome-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: auto;
+}
+
+#header-welcome > .profile-picture {
+    grid-row: 1 / 3;
+}
+
+#header-buttons {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    
+    align-items: center;
+    justify-items: center;
+}
+
+#header-buttons > button {
+    border: none;
+    border-radius: 24px;
+    
+    background-color: #1992d4;
+    color: white;
+    
+    cursor: pointer;
+    
+    height: 50%;
+    width: 80%;
+    
+    transition: 100ms ease-in-out;
+}
+
+#header-buttons > button:hover {
+    transform: scale(1.05);
 }
 
 #content {
