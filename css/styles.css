@@ -222,6 +222,11 @@ body {
 .project-title {
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.project-title:hover {
+    text-decoration: underline;
 }
 
 .project-description {
@@ -231,6 +236,15 @@ body {
 .project-buttons {
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr;
+}
+
+.project-buttons > img {
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+
+.project-buttons > img:hover {
+    transform: scale(1.05);
 }
 
 #projects > div:nth-child(2) {
@@ -293,6 +307,11 @@ body {
 .announcement-title {
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.announcement-title:hover {
+    text-decoration: underline;
 }
 
 .announcement-description {
@@ -338,10 +357,26 @@ body {
     font-size: 14px;
     font-weight: 700;
     margin-top: auto;
+    cursor: pointer;
+}
+
+.trender-user:hover {
+    text-decoration: underline;
 }
 
 .trender-project {
     grid-column: 2 / 3;
     color: gray;
     margin-bottom: auto;
+}
+
+.project,
+#trending,
+#announcements {
+    box-shadow: 2px 4px 4px rgba(128, 128, 128, 0.5);
+}
+
+#header {
+    box-shadow: 0px 4px 4px rgba(128, 128, 128, 0.5);
+    z-index: 10;
 }
